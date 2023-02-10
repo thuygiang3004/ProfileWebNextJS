@@ -1,11 +1,13 @@
-import { Card, Stack, Chip } from "@mui/material";
+import { Card, Stack, Chip, Button } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div>
       <div className="w-full">
         <div className="relative">
-          <img src="/hero.png" alt="" className="w-full" />
+          <img src="/hero.png" alt="" className="w-full max-h-80" />
           <div className="absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
             <h1 className="text-sm sm:text-5xl sm:mb-3">Thuy Nguyen</h1>
             <h2 className="sm: text-sm sm:text-2xl sm:mb-3">Web Developer</h2>
@@ -15,7 +17,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container flex flex-col sm:flex-row mx-auto px-4 pt-10 flex-padding">
+        <div className="container flex flex-col sm:flex-row mx-auto px-4 pt-5 flex-padding">
           <Card
             variant="outlined"
             sx={{
@@ -28,11 +30,11 @@ export default function Home() {
           <Card
             variant="outlined"
             sx={{
-              p: 5,
+              p: 2,
             }}
             className="m-5"
           >
-            <h1 className="text-xl sm:text-3xl text-center pb-8">Who am I?</h1>
+            <h1 className="text-xl sm:text-3xl text-center pt-5 pb-5">Who am I?</h1>
             <h2 className="text-sm sm:text-xl text-center">
               I found my true passion in creating software not so long ago but
               the journey with coding has been amazing so far.
@@ -51,6 +53,22 @@ export default function Home() {
               <Chip label="Typescript" color="info" sx={{ mb: 1 }} />
               <Chip label="Javascript" color="error" sx={{ mb: 1 }} />
             </Stack>
+            <br></br>
+            <Stack
+              direction="row"
+              className="justify-center"
+            >
+              <Button variant="outlined" endIcon={<SendIcon />} >
+              <Link
+                href="/projects"              
+              >
+                Check out my portfolio
+              </Link>
+              </Button>
+            </Stack>
+            <div className="justify-center">
+              
+            </div>
           </Card>
         </div>
       </div>
