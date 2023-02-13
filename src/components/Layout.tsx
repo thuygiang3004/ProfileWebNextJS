@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import Meta from "./Meta";
+import Footer from "./Footer";
 
 const Layout: React.FunctionComponent<any> = ({ children }: any) => {
   return (
@@ -9,6 +10,7 @@ const Layout: React.FunctionComponent<any> = ({ children }: any) => {
       <div>
         <main>{children}</main>
       </div>
+      <Footer></Footer>
     </>
   );
 };

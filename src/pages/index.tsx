@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full h-[calc(100vh-112px)]">
         <div className="relative">
           <img src="/hero.png" alt="" className="w-full max-h-80" />
           <div className="absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
@@ -19,9 +19,9 @@ export default function Home() {
 
         <div className="container flex flex-col sm:flex-row mx-auto px-4 pt-5 flex-padding">
           <Card
-            variant="outlined"
+            // variant="outlined"
             sx={{
-              p: 2,
+              // p: 2,
             }}
             className="m-5 sm:w-1/2 items-stretch"
           >
