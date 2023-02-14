@@ -13,6 +13,7 @@ const Meta = ({ title, keywords, description }: metaProps) => {
       <meta name="description" content={description} />
       <meta charSet="utf-8" />
       <title>{title}</title>
+      <link rel="icon" href="/favicon-32x32.png" />
     </Head>
   );
 };

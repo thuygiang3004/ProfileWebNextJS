@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav className="bg-gray-800 text-sm pt-3 pb-3 sm:text-lg">
+    <nav className="bg-gray-800 text-sm pt-3 pb-3 sm:text-lg fixed top-0 w-full z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex">
         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div className=" sm:ml-6 sm:block">
@@ -11,21 +11,21 @@ const Nav = () => {
                 href="/"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
               >
-                Home
+                HOME
               </Link>
 
               <Link
                 href="/projects"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
               >
-                Projects
+                PORTFOLIO
               </Link>
 
               <Link
                 href="/contact"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium"
               >
-                Contact
+                CONTACT
               </Link>
             </div>
           </div>
