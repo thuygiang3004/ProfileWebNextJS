@@ -36,19 +36,19 @@ const Slideshow = ({ images, duration }: SlideshowProps) => {
       <img
         src={images[(currentIndex - 1 + images.length) % images.length]}
         alt="slide"
-        className="absolute top-10 left-10 w-1/2 h-10/12 z-10 opacity-50"
+        className="absolute top-10 left-10 md:w-1/2 md:h-10/12 z-10 opacity-50"
       />
       <a href="/projects">
         <img
           src={images[currentIndex]}
           alt="slide"
-          className="absolute top-0 left-1/4 w-1/2 h-full z-20"
+          className="absolute top-0 md:left-1/4 md:w-1/2 h-full z-20"
         />
       </a>
       <img
         src={images[(currentIndex + 1) % images.length]}
         alt="slide"
-        className="absolute top-10 right-10 w-1/2 h-10/12 z-10 opacity-50"
+        className="absolute top-10 right-10 md:w-1/2 md:h-10/12 z-10 opacity-50 "
       />
       <button
         onClick={handlePrev}
