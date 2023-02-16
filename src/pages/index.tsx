@@ -5,16 +5,16 @@ import Slideshow from "@/components/Slideshow";
 import Image from 'next/image'
 
 const images = [
-  "/P1_1.PNG",
-  "/P1_2.PNG",
-  "/P1_3.PNG",
-  "/P1_4.PNG",
-  "/P2_1.PNG",
-  "/P2_2.PNG",
-  "/P2_3.PNG",
-  "/P2_4.PNG",
-  "/P2_5.PNG",
-  "/P2_6.PNG",
+  "/P11.png",
+  "/P12.png",
+  "/P13.png",
+  "/P14.png",
+  "/P21.png",
+  "/P22.png",
+  "/P23.png",
+  "/P24.png",
+  "/P25.png",
+  "/P26.png",
   "/houseCleaning.png",
 ];
 

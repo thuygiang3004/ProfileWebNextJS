@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 const projects = [
   {
     id: 0,
-    image: "/P2_1.png",
+    image: "/P21.png",
     name: "Kanban Task Management",
     des1: "A Web system that allows users to create project, customize swimlane, create and manage task, collaborate with team members",
     des2: 'Awarded the Computer Applications Development Capstone Project "Best of Program" Award',
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 1,
-    image: "/P1_1.png",
+    image: "/P11.png",
     name: "Work Order Management System",
     des1: "A Web System for Property Management Company that allows their customers to check new rental listings, tenants to submit work order requests and allows company’s staff to manage requests and publish new listings.",
     des2: undefined,
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "/P3_1.png",
+    image: "/P31.png",
     name: "thuygiangnguyen.com",
     des1: "My portfolio Website",
     des2: undefined,
