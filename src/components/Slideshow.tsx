@@ -3,6 +3,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { Card } from "@mui/material";
 import Link from "next/link";
+import Image from 'next/image'
 
 interface SlideshowProps {
   images: string[];
@@ -34,20 +35,23 @@ const Slideshow = ({ images, duration }: SlideshowProps) => {
 
   return (
     <div className="relative h-96">
-      <img
+      <Image
         src={images[(currentIndex - 1 + images.length) % images.length]}
+        width={500} height={500}
         alt="slide"
         className="absolute top-10 left-10 md:w-1/2 md:h-10/12 z-10 opacity-50"
       />
       <Link href="/projects">
-        <img
+        <Image
           src={images[currentIndex]}
+          width={500} height={500}
           alt="slide"
           className="absolute top-0 md:left-1/4 md:w-1/2 h-full z-20"
         />
       </Link>
-      <img
+      <Image
         src={images[(currentIndex + 1) % images.length]}
+        width={500} height={500}
         alt="slide"
         className="absolute top-10 right-10 md:w-1/2 md:h-10/12 z-10 opacity-50 "
       />

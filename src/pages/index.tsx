@@ -2,6 +2,7 @@ import { Card, Stack, Chip, Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
+import Image from 'next/image'
 
 const images = [
   "/P1_1.PNG",
@@ -22,7 +23,7 @@ export default function Home() {
     <div>
       <div className="w-full">
         <div className="relative pt-16">
-          <img src="/hero.png" alt="" className="w-full max-h-80" />
+          <Image width={500} height={500} src="/hero.png" alt="" className="w-full max-h-80" />
           <div className="absolute text-white top-2/3 left-1/2 sm:top-1/2 sm:left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
             <h1 className="text-sm sm:text-5xl sm:mb-3">Thuy Nguyen</h1>
             <h2 className="sm: text-sm sm:text-2xl sm:mb-3">Web Developer</h2>
@@ -80,8 +81,9 @@ export default function Home() {
           </Card>
 
           <Card className="relative max-w-xs mr-5">
-            <img
+            <Image
               src="/profilePic.jpg"
+              width={500} height={500}
               alt=""
               className="h-full w-full object-cover"
             />

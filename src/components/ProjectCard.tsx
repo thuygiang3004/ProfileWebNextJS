@@ -1,4 +1,5 @@
 import { Card, Stack, Chip, Button } from "@mui/material";
+import Image from 'next/image'
 
 interface ProjectProps {
   project: {
@@ -22,7 +23,7 @@ const ProjectCard = ({ project }: ProjectProps) => {
       }}
       className="m-5 h-full sm:text-xl"
     >
-      <img src={project.image} alt="" className="px-10 pt-5 hover:scale-110" />
+      <Image src={project.image} width={500} height={500} alt="" className="px-10 pt-5 hover:scale-110" />
       <h1 className="text-xl sm:text-3xl text-center pt-5">{project.name}</h1>
       <h2 className="p-8">
         {project.des1}
