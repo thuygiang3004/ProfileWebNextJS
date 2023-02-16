@@ -45,8 +45,8 @@ export default function Home() {
               Who am I?
             </h1>
             <h2 className="text-sm sm:text-xl text-center">
-              Hi, I&apos;m a junior
-              <strong className="bg-green-300">web developer</strong> with a
+              Hi, I&apos;m a
+              <strong className="bg-green-300"> web developer</strong> with a
               passion for creating dynamic, user-friendly websites.
               <br></br>I found my true passion in creating software not so long
               ago but the journey with coding has been amazing so far.
@@ -89,7 +89,7 @@ export default function Home() {
             />
           </Card>
         </div>
-        <div className="container px-9">
+        <div className="container px-9 pt-5 sm:pt-0">
           <Card className=" pb-10 mb-10 h-300">
             <h1 className="text-center mb-5 pt-5 text-3xl">My Projects</h1>
             <Slideshow images={images} duration={3000} />
