@@ -45,7 +45,7 @@ export default function Home() {
               Who am I?
             </h1>
             <h2 className="text-sm sm:text-xl text-center">
-              Hi, I\'m a junior{" "}
+              Hi, I&apos;m a junior
               <strong className="bg-green-300">web developer</strong> with a
               passion for creating dynamic, user-friendly websites.
               <br></br>I found my true passion in creating software not so long
