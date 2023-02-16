@@ -1,9 +1,11 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-slate-500 text-sm sm:text-lg">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex">    
+    <footer className="bg-slate-500 text-sm sm:text-lg fixed bottom-0 w-full z-50">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex">
         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center space-x-8 pr-10">
-          <h1 className="text-md sm:text-xl pt-2 font-semibold pr-20">&#169;Thuy Nguyen</h1>
+          <h1 className="text-md sm:text-xl pt-2 font-semibold pr-20">
+            &#169;Thuy Nguyen
+          </h1>
           <a
             href="https://www.linkedin.com/in/jane-nguyen-5a3933133/"
             className="bg-slate-200 mt-2 mb-2 rounded-sm p-1 hover:bg-sky-300"
@@ -41,7 +43,15 @@ const Footer = () => {
             className="bg-slate-100 mt-2 mb-2 ml-5 rounded-sm p-1 hover:bg-sky-300"
             target="_blank"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
           </a>
         </div>
       </div>
