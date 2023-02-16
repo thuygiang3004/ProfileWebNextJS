@@ -35,7 +35,7 @@ const Nav = () => {
           <a
             href="https://www.linkedin.com/in/jane-nguyen-5a3933133/"
             className="bg-slate-200 mt-2 mb-2 rounded-sm p-1 mr-5 hover:bg-sky-300"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Nav = () => {
           <a
             href="https://github.com/thuygiang3004/"
             className="bg-slate-200 mt-2 mb-2 rounded-sm p-1 hover:bg-sky-300"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

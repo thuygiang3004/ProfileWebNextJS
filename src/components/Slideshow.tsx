@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { Card } from "@mui/material";
+import Link from "next/link";
 
 interface SlideshowProps {
   images: string[];
@@ -38,13 +39,13 @@ const Slideshow = ({ images, duration }: SlideshowProps) => {
         alt="slide"
         className="absolute top-10 left-10 md:w-1/2 md:h-10/12 z-10 opacity-50"
       />
-      <a href="/projects">
+      <Link href="/projects">
         <img
           src={images[currentIndex]}
           alt="slide"
           className="absolute top-0 md:left-1/4 md:w-1/2 h-full z-20"
         />
-      </a>
+      </Link>
       <img
         src={images[(currentIndex + 1) % images.length]}
         alt="slide"

@@ -54,13 +54,13 @@ const ProjectCard = ({ project }: ProjectProps) => {
       >
         {project.web && (
           <Button variant="contained" className="bg-gray-800 hover:bg-sky-700">
-            <a href={project.web} target="_blank">
+            <a href={project.web} target="_blank" rel="noreferrer">
               Website
             </a>
           </Button>
         )}
         <Button variant="contained" className="bg-gray-800 hover:bg-sky-700">
-          <a href={project.git} target="_blank">
+          <a href={project.git} target="_blank" rel="noreferrer">
             Source Code
           </a>
         </Button>
